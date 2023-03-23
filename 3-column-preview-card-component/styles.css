@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --primary-ff: "Lexend Deca", sans-serif;
+  --heading-ff: "Big Shoulders Display", sans-serif;
+  --bg-verylight-gray: hsl(0, 0%, 95%);
+  --bg-transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-ff);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-verylight-gray);
+  color: var(--bg-transparent-white);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a,
+button {
+  cursor: revert;
+}
+button {
+  outline-color: transparent;
+  border: none;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1050px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card {
+  padding: 5rem 0 0 5rem;
+}
+.card-one,
+.card-one button:hover,
+.card-one button:focus {
+  background-color: var(--orange);
+}
+.card-two,
+.card-two button:hover,
+.card-two button:focus {
+  background-color: var(--cyan);
+}
+.card-three,
+.card-three button:hover,
+.card-three button:focus {
+  background-color: var(--dark-cyan);
+}
+.card-one button {
+  color: var(--orange);
+}
+.card-two button {
+  color: var(--cyan);
+}
+.card-three button {
+  color: var(--dark-cyan);
+}
+h1 {
+  padding-bottom: 3rem;
+  font-size: 4rem;
+  font-family: var(--heading-ff);
+  color: var(--bg-verylight-gray);
+  font-weight: 700;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding: 0 9.3rem 0 0;
+}
+.card img {
+  padding-bottom: 3rem;
+}
+button {
+  margin: 7rem 0 4rem 0;
+  width: 150px;
+  height: 50px;
+  background-color: var(--bg-verylight-gray);
+  border-radius: 2.4rem;
+  font-size: 1.6rem;
+}
+.card button:hover,
+.card button:focus {
+  border: 2px solid var(--bg-verylight-gray);
+  color: var(--bg-verylight-gray);
+}
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    margin: 10px;
+    width: 350px;
+    height: auto;
+    overflow: none;
+  }
+  p {
+    padding: 0 7.5rem 0 0;
+  }
+}
